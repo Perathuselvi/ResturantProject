@@ -1,0 +1,145 @@
+:root{
+    --red:crimson;
+    --green:#53BF9D;
+    --yellow:#FFC54D;
+    --white:whitesmoke;
+}
+body,h2{
+    margin: 0;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.landing{
+    background-image: url('../media/spicy2.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: var(--white);
+}
+header a{
+    text-decoration: none;
+    color: var(--yellow);
+    min-width: 120px;
+}
+header{
+    display: flex;
+    padding: 1em;
+    flex-wrap: wrap;
+    row-gap: 1em;
+}
+#logo{
+    flex: 3;
+    font-size: 1.25em;
+    min-width: 260px;
+}
+nav{
+    flex: 2;
+    display: flex;
+    align-items: center;
+}
+nav a{
+    flex:1;
+}
+nav a:hover{
+    color: var(--green);
+}
+.maintext{
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    justify-content: center;
+    padding: 2em;
+}
+.tagline1{
+    color: var(--red);
+    font-size: 2.5em;
+    font-weight: bolder;
+}
+.tagline2{
+    color: var(--yellow);
+}
+.maintext div{
+    margin-top: .75em;
+}
+.maintext button{
+    width: 20vw;
+    margin-top: 2em;
+    border-radius: 10px;
+    padding: .7em;
+    background-color: var(--green);
+    color: var(--white);
+    border: 1px solid var(--green);
+}
+.menu{
+    display:grid;
+        grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
+        background: -moz-linear-gradient(rgb(116, 115, 115), rgb(67, 63, 63));
+        background: -webkit-linear-gradient(rgb(116, 115, 115), rgb(67, 63, 63));
+        background: linear-gradient(to right rgb(116, 115, 115), rgb(67, 63, 63));
+        color: var(--white);
+    }
+    #menuheading,#locheading{
+        background: -moz-linear-gradient(rgb(116, 115, 115), rgb(67, 63, 63));
+        background: -webkit-linear-gradient(rgb(116, 115, 115), rgb(67, 63, 63));
+        background: linear-gradient(to right rgb(116, 115, 115), rgb(67, 63, 63));
+        color: var(--red);
+        font-size: 2.5em;
+        display: flex;
+        justify-content: center;
+       
+    }
+    .menu th{
+        color: var(--green);
+        font-size: 1.8em;
+    }
+    table{
+        width: 100%;
+        padding: 1em;
+    }
+    .menu tr{
+        display: flex;
+        justify-content: center;
+        margin-top: 1em;
+    }
+    .menu td :nth-child(1){
+        flex:1;
+        justify-self: left;
+    }
+    .menu td :nth-child(2){
+        justify-self: right;
+    }
+    .locations{
+        background: -moz-linear-gradient(rgb(116, 115, 115), rgb(67, 63, 63));
+        background: -webkit-linear-gradient(rgb(116, 115, 115), rgb(67, 63, 63));
+        background: linear-gradient(to right rgb(116, 115, 115), rgb(67, 63, 63));
+        color: var(--white);
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+    .locations h2{
+        color: var(--green);
+        margin-bottom: 1em;
+    }
+    .locations div{
+        flex:1;
+        padding: 1em;
+        min-width: 220px;
+       
+    }
+    footer{
+        background-color: rgb(99, 94, 94);
+        color: var(--white);
+        padding: .25em 1em;
+    }
+    /* Add this to your existing CSS or create a new CSS file */
+    #logo h1::before {
+        content: "\f123"; /* Unicode for the location-pin icon from Font Awesome */
+        font-family: 'Font Awesome 6 Free'; /* Specify the Font Awesome font family */
+        margin-right: 2px; /* Adjust the spacing between the icon and text */
+    }
+    .locations address{
+        line-height: 2.0;
+    }
+    
+
+    
